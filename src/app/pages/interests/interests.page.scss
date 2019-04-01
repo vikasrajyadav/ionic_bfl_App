@@ -1,0 +1,104 @@
+    app-interests {
+        .interestcontents {
+            background-image: Url("../../assets/images/interestBack.png");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 0 !important;
+        }
+        .interestmain {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .customSearch {
+            padding: 30px 20px 30px 20px;
+            .searchbar-input-container {
+                .searchbar-input {
+                    background: transparent !important;
+                    color: #fff !important;
+                    border-bottom: 1px solid #fff !important;
+                    box-shadow: none !important;
+                    font-size: 14px !important;
+                }
+                .searchbar-search-icon {
+                    color: #fff !important;
+                }
+            }
+        }
+        .chip {
+            border-radius: 50px;
+            border: 1px solid #fff;
+            // padding: 10px;
+            // padding: 5px;
+            background: #fff;
+            color: #4F7AFC;
+        }
+        .chips-default {
+            background: transparent;
+            color: #fff;
+            // padding: 10px;
+            border: 1px solid #ffff;
+            border-radius: 50px;
+        }
+        .selectedSkill {
+            font-size: 24px;
+        }
+        .skillsGrid {
+            // height: 64%;
+            max-height: 64%;
+            overflow: auto;
+        }
+        .skipButton {
+            --padding-top: 20px;
+            --padding-bottom: 20px;
+            margin: 15px 0px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .skillsButton {
+            --padding-top: 20px;
+            --padding-bottom: 20px;
+            margin: 15px 0px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .skipBtn {
+            --color: #FFFFFF;
+        }
+        .doneBtn {
+            --color: #4F7AFC;
+            --box-shadow: none;
+            --border-color: #fff;
+        }
+         ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+            border-radius: 50px!important;
+            background-color: #ffffff29!important;
+        }
+         ::-webkit-scrollbar {
+            width: 7px!important;
+            border-radius: 50px!important;
+            background-color: #ffffff29!important;
+        }
+         ::-webkit-scrollbar-thumb {
+            border-radius: 50px!important;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3)!important;
+            background-color: #FFFFFF!important;
+        }
+        .interestFooter {
+            height: 125px;
+            position: absolute;
+            width: 100%;
+        }
+        .skillList-item {
+            // color: #4F7AFC;
+            ion-checkbox {
+                --background: transparent;
+                --border-color: transparent;
+                --checkmark-color: #4F7AFC;
+                --background-checked: #fff;
+                margin-right: 8%;
+            }
+        }
+    }

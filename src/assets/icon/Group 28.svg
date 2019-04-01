@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="104px" viewBox="0 0 102 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53 (72520) - https://sketchapp.com -->
+    <title>4F2F3F0A-0AD7-4969-BC8E-3CC04B0916CB</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="32" cy="32" r="32"></circle>
+        <filter x="-46.9%" y="-46.9%" width="193.8%" height="193.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-Results" transform="translate(-722.000000, -654.000000)">
+            <g id="Group-6" transform="translate(146.000000, 568.000000)">
+                <g id="Group-11-Copy" transform="translate(428.000000, 46.000000)">
+                    <g id="Group-28" transform="translate(167.000000, 60.000000)">
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M26.0020474,22.0436677 L26.2453445,42.006177 C26.2588057,43.1106645 27.1650821,43.9951161 28.2695696,43.9816549 C28.7529683,43.9757634 29.2178726,43.79498 29.5782614,43.4727551 L41.2255869,33.0588381 C42.0490167,32.3226065 42.1197048,31.058251 41.3834731,30.2348211 C41.3102646,30.1529419 41.2304356,30.0772324 41.1447959,30.0084607 L29.2541733,20.4598683 C28.3929261,19.7682562 27.1340851,19.9057726 26.4424731,20.7670198 C26.152085,21.1286327 25.9963955,21.5799251 26.0020474,22.0436677 Z" id="Path" fill="#507BFC"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

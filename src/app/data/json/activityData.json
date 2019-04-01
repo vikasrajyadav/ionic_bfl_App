@@ -1,0 +1,33 @@
+{
+	"activityDuration": "01:00:00",
+	"activityId": 7,
+	"activitycompletionid": null,
+	"completionCriteria": "1",
+	"completionDate": null,
+	"completionDays": 1,
+	"completionstatus: null,
+	"contentId": 4,
+	"contentRepId": "1552638835000",
+	"contenttime": null,
+	"contentwatchedtime": null,
+	"courseId": 45,
+	"creditAllocId": 243,
+	"dependentActId": 0,
+	"description": "",
+	"enrolId": 75,
+	"fileinfo": {
+        "mimetype": "image/jpeg", 
+        "documenttype": "image"
+    },
+	"mimeType": "image/jpeg",
+	"moduleId": 22,
+	"name": "Demo Image",
+	"points": 1,
+	"reference": "https://bhaveshedgetest.s3.ap-south-1.amazonaws.com/IMG-20180725-WA0019.jpg",
+	"referenceType": "image",
+	"show": true,
+	"startDate": null,
+	"tags": "Video",
+	"tenantId": 1,
+	"viewed": null
+}

@@ -1,0 +1,81 @@
+<ion-header mode="ios">
+  <ion-toolbar color="primary">
+    <ion-title no-padding>
+      <ion-item class="transparent" no-padding lines="none">
+        <div> Employee List</div>
+      </ion-item>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="learnmain">
+  <ion-grid>
+    <ion-card
+      class="coursecard"
+      *ngFor="let cards of filterCourseList; let i = index"
+      (click)="goToModules(cards, i)"
+    >
+      <ion-row class="headrrow">
+        <ion-col size="2" class="colMarg">
+          <ion-img [src]="cards.icon" class="ico"></ion-img>
+        </ion-col>
+        <ion-col size="10">
+          <p class="cardtitl">{{ cards.empName }}</p>
+          <p class="subtitl">Employee code: {{ cards.empCode }}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="footrrow">
+        <ion-col size="3">
+          <!-- <circle-progress 
+                    [percent]="85" 
+                    [radius]="30" 
+                    [outerStrokeWidth]="2" 
+                    [innerStrokeWidth]="1" 
+                    [outerStrokeColor]="'#78C000'" 
+                    [innerStrokeColor]="'#C7E596'" 
+                    [animation]="true" 
+                    [animationDuration]="300">
+                    </circle-progress> -->
+          <circle-progress
+            [percent]="cards.progressValue"
+            [radius]="30"
+            [space]="-5"
+            [outerStrokeGradient]="true"
+            [outerStrokeWidth]="5"
+            [outerStrokeColor]="'#4882c2'"
+            [outerStrokeGradientStopColor]="'#53a9ff'"
+            [innerStrokeColor]="'#e7e8ea'"
+            [innerStrokeWidth]="5"
+            [title]=""
+            [animateTitle]="false"
+            [animationDuration]="1000"
+            [showUnits]="true"
+            [unitsFontSize]="20"
+            [showSubtitle]="false"
+            [subtitleFontSize]="22"
+            [showBackground]="false"
+            [startFromZero]="false"
+          >
+          </circle-progress>
+        </ion-col>
+        <ion-col size="9" no-padding>
+          <ion-button shape="round">
+            {{ cards.approval }}
+          </ion-button>
+          <p class="classrmtxt">
+            <ion-icon name="easel" class="classIcon"></ion-icon>
+            <!-- <ion-icon src="/assets/icon/classroom.svg" class="classIcon"></ion-icon> -->
+            classroom: {{ cards.points }}
+          </p>
+          <p class="targetTtile">
+            Online Courses: {{ cards.courseNo }}/5 | Classrooms Courses:
+            {{ cards.points }}
+          </p>
+          <!-- <p class="targetTtile">{{ cards.courseNo }}/5</p> 
+                    <p class="targetTtile">TARGET: {{ cards.targetDate | date: 'dd-MM-yyyy' }}</p> -->
+        </ion-col>
+      </ion-row>
+      
+    </ion-card>
+  </ion-grid>
+</ion-content>

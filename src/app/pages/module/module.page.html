@@ -1,0 +1,75 @@
+<ion-header mode="ios">
+  <ion-toolbar color="primary">
+    <ion-title no-padding>
+      <ion-item class="transparent" no-padding lines="none">
+        <div>Employee List</div>
+      </ion-item>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="modulemain">
+  <ion-toolbar class="moduleToobar">
+    <ion-buttons slot="start" (click)="goToCourse()">
+      <ion-icon slot="icon-only" name="ios-arrow-dropleft"></ion-icon>
+      <ion-label class="backBtnLabel textUppercase">Back</ion-label>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon
+        slot="icon-only"
+        name="md-share"
+        class="shareBtnIcon"
+        (click)="shareCourse()"
+      ></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div class="modulecontents">
+
+    <ion-card
+      *ngFor="
+        let activty of modulesList[currentModIndex].activities;
+        let i = index
+      "
+      class="activityCards"
+    >
+      <img
+        class="actvityCardImg"
+        [src]="activty.imageUrl"
+        (click)="goToActivity(activty)"
+      />
+      <ion-card-header class="activityCardHeader">
+        <ion-row no-padding>
+          <ion-col size="11">
+            <ion-card-title class="activityCardTitle">
+              <ion-label class="activityCardIndex">0{{ i + 1 }}</ion-label>
+              {{ activty.title }}
+            </ion-card-title>
+          </ion-col>
+          <ion-col size="1">
+            <ion-icon
+              name="bookmark"
+              class="actvityCardIcon"
+              (click)="saveActivity(activty)"
+              [ngClass]="{ savedAct: activty.saved }"
+            ></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+
+      <ion-card-content>{{ activty.description }}</ion-card-content>
+
+      <div>
+        <ion-button
+          class="activityStartButton"
+          expand="full"
+          shape="round "
+          fill="solid"
+          color="primary"
+          (click)="goToActivity()"
+          >Begin</ion-button
+        >
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

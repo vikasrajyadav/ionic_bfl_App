@@ -1,0 +1,84 @@
+app-activity {
+    .activityMain {
+        padding: 0 !important;
+        margin: 0 !important;
+        --background: #f4f4f4;
+    }
+    .activityHeader {
+        position: relative;
+    }
+    .toprightBtn {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        // font-size: 18px;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    .activityHeaderImg {
+        width: 100%;
+        height: auto;
+        // opacity: 0.3;
+    }
+    .closeBtnLabel {
+        padding-left: 5px;
+    }
+    .closeBtnIcon {
+        font-size: 6vw;
+    }
+    .activityHeader1 {
+        font-size: 9.5vw;
+        font-weight: 600;
+        color: #507bfc;
+    }
+    .activityHeader2 {
+        font-size: 3.9vw;
+        color: #807e7e;
+    }
+    .activityHeader3 {
+        font-size: 6.7vw;
+        font-weight: 600;
+    }
+    .toolbarHeader {
+        font-size: 4vw;
+    }
+    .toolbarSubHeader {
+        font-size: 3vw;
+        color: #807e7e;
+    }
+    .toolbarHeaderBtns {
+        color: #a5a2a2;
+    }
+    .activityShareBtnIcon {
+        font-size: 3vw;
+    }
+    .activitySaveBtnIcon {
+        padding-left: 15px !important;
+        font-size: 6vw;
+    }
+    .activityContentRow2 {
+        margin: 15px 0 15px 0;
+    }
+    .activityFooter {
+        // height: 125px;
+        // position: absolute;
+        // width: 100%;
+    }
+    .actSubmitButton {
+        --padding-top: 20px;
+        --padding-bottom: 20px;
+        margin: 15px 0px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .assesBtn {
+        --color: #4F7AFC;
+        --border-color: #4F7AFC;
+        --box-shadow: none;
+    }
+    .compBtn {
+        --color: #4F7AFC;
+        --box-shadow: none;
+        --border-color: #4F7AFC;
+    }
+}

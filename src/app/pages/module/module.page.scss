@@ -1,0 +1,88 @@
+app-module {
+    .modulecontents {}
+    .modulemain {
+        padding: 0 !important;
+        margin: 0 !important;
+        --background: #f4f4f4;
+    }
+    .moduleToobar {
+        --background: transparent;
+        font-size: 4vw;
+    }
+    .backBtnLabel {
+        padding-left: 5px;
+        font-weight: bold;
+    }
+    .shareBtnIcon {
+        color: #818181;
+    }
+    .courseDescgrid {
+        font-size: 3.4vw;
+    }
+    .courseIcon {}
+    .courseTitle {
+        font-size: 5vw;
+    }
+    .courseDesc {
+        line-height: 1.5;
+        color: #a0a0a0;
+    }
+    .courseAddInfo {
+        color: #585757;
+    }
+    .courseCompDate {}
+    .courseModCount {}
+    .courseStageCount {}
+    .actvityCardImg {
+        max-height: 165px;
+    }
+    .activityCardHeader {
+        padding: 10px;
+    }
+    .activityCardTitle {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    .activityCardIndex {
+        color: #3880ff;
+    }
+    .actvityCardIcon {
+        float: right;
+        font-size: 5.5vw;
+        color: #abaaaa;
+    }
+    .activityCards {
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .activityStartButton {
+        text-transform: uppercase;
+        margin: 0px 12px 12px 12px;
+        font-weight: 600;
+        font-size: 3.4vw;
+    }
+    .savedAct {
+        color: #3880ff;
+    }
+    .moduleContainer {
+        overflow: hidden;
+        white-space: nowrap;
+         ::-webkit-scrollbar {
+            display: none;
+        }
+        .moduleContainerScroll {
+            overflow: auto;
+        }
+    }
+    .moduleListButton {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 3.5vw;
+    }
+    .defaultModule {
+        --color: #3880ff;
+        --background: #fff;
+        --box-shadow: none;
+        --color-activated: #3880ff;
+    }
+}

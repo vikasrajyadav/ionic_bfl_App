@@ -1,0 +1,70 @@
+<ion-header mode="ios">
+    <ion-toolbar color="primary">
+        <ion-title>
+            <div text-start class="toolbartitl">
+                Sign In
+            </div>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="main">
+    <div class="contents ">
+        <ion-grid class="gridsss ">
+            <ion-row >
+                <ion-col>
+                    <h3 class="headingtxt">Please fill the details</h3>
+                </ion-col>
+            </ion-row>
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+            <ion-row >
+                <ion-col>
+                    <ion-item class=" transparent" transparent>
+                        <ion-label position="floating" no-padding>Email</ion-label>
+                        <ion-input type="email" autocomplete="off" formControlName="username"></ion-input>
+                    </ion-item>
+                    <div class="error-messages">
+                        <small style="text-align: left" *ngIf="loginForm.controls.username.hasError('required') && loginForm.controls.username.touched">
+                        <label style="color: crimson">Email required</label></small>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row >
+                <ion-col>
+                    <ion-item class="transparent">
+                        <ion-label position="floating" no-padding>Password</ion-label>
+                        <!-- <ion-input type="{{type}}" name="password" ngModel #password="ngModel" required pattern=".{4,10}"></ion-input> -->
+                        <ion-input type="{{type}}" name="password" formControlName="password"></ion-input>
+                        <ion-icon *ngIf="!showPass" name="eye" color="primary" slot="end" class="passwordIcon" (click)="showPassword()"></ion-icon>
+                        <ion-icon *ngIf="showPass" name="eye" color="primary" slot="end" class="passwordIcon" (click)="showPassword()"></ion-icon>
+                    </ion-item>
+                    <div class="error-messages">
+                        <small style="text-align: left;" *ngIf="loginForm.controls.password.hasError('required') && loginForm.controls.password.touched">
+                                <label style="color: crimson">Password is required</label>
+                        </small>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row no-padding class="martop ">
+                <ion-col justify-content-start col-6 no-padding>
+                    <ion-item lines="none" no-padding class="transparent">
+                        <ion-label class="labeltxt">Remember Me</ion-label>
+                        <ion-checkbox slot="start" class="checkmar"></ion-checkbox>
+                    </ion-item>
+                </ion-col>
+                <ion-col justify-content-end col-6 no-padding>
+                    <ion-item lines="none" class="transparent" no-padding text-end>
+                        <ion-label class="labeltxt">
+                            <a>Forgot Password?</a>
+                        </ion-label>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="martop">
+                <ion-button class="fullwidth" color="primary" shape="round" type="submit">Sign In</ion-button>
+            </ion-row>
+        </form>
+        </ion-grid>
+    </div>
+</ion-content>

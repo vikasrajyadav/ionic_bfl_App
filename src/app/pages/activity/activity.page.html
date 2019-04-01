@@ -1,0 +1,91 @@
+<ion-header mode="ios">
+    <ion-toolbar color="primary">
+        <ion-title no-padding>
+            <ion-item class="transparent" no-padding lines="none">
+                <ion-avatar slot="start" ion-justify-content-start margin-vertical class="headerico">
+                    <img src="../../assets/icon/Bitmap.png">
+                </ion-avatar>
+                <ion-searchbar placeholder="Search" color="medium-tint" no-padding ion-justify-content-center class="searchbar" mode="ios"></ion-searchbar>
+                <ion-icon name="notifications" ion-justify-content-end class="notifyico"></ion-icon>
+            </ion-item>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<div class="activityHeader">
+    <ion-img [src]="activityData.headerImg" class="activityHeaderImg"></ion-img>
+    <div class="toprightBtn">
+        <ion-buttons slot="end" (click)="goToModules()">
+            <ion-icon class="closeBtnIcon" slot="icon-only" name="ios-close-circle-outline"></ion-icon>
+            <ion-label class="closeBtnLabel textUppercase">Close</ion-label>
+        </ion-buttons>
+    </div>
+</div>
+
+<ion-content class="activityMain" padding>
+
+    <ion-grid class="activityHeaderGrid" no-padding>
+        <ion-row no-padding>
+            <ion-col class="activityHeader1" no-padding>
+                {{activityData.id}}
+            </ion-col>
+        </ion-row>
+        <ion-row no-padding>
+            <ion-col class="activityHeader2" no-padding>
+                {{activityData.courseName}}
+            </ion-col>
+        </ion-row>
+        <ion-row no-padding>
+            <ion-col class="activityHeader3" no-padding>
+                {{activityData.activityTitle}}
+            </ion-col>
+        </ion-row>
+        <ion-row no-padding>
+            <ion-col class="activityHeader2" no-padding>
+                {{activityData.activitySubTitle}}
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-item color="transparent" lines="none" no-padding>
+        <ion-avatar slot="start" ion-justify-content-start margin-vertical>
+            <img src="{{activityData.authorAvtar}}">
+        </ion-avatar>
+        <ion-label>
+            <ion-row class="toolbarHeader">{{activityData.authorName}}</ion-row>
+            <ion-row class="toolbarSubHeader">{{activityData.date}}</ion-row>
+        </ion-label>
+        <ion-buttons class="toolbarHeaderBtns" slot="end">
+            <ion-icon slot="icon-only" name="md-share" class="activityShareBtnIcon" (click)="shareActivity()"></ion-icon>
+            <ion-icon slot="icon-only" name="bookmark" class="activitySaveBtnIcon" (click)="saveActivity()"></ion-icon>
+        </ion-buttons>
+    </ion-item>
+
+    <ion-grid class="activityContentGrid" no-padding>
+        <ion-row class="activityContentRow1">
+            {{activityData.desc1}}
+        </ion-row>
+        <ion-row class="activityContentRow2">
+            <div *ngIf="activityData.type == 'image'">
+                <ion-img [src]="activityData.desc2" (click)="viewImage(activityData.desc2, activityData.activityTitle, activityData.courseName)"></ion-img>
+            </div>
+            <div *ngIf="activityData.type == 'video'">
+                <ion-button class="actSubmitButton compBtn" shape="round " fill="solid " color="compButton " expand="full " (click)="playVideo(activityData.desc2)">Play video</ion-button>
+            </div>
+        </ion-row>
+        <ion-row class="activityContentRow3">
+            {{activityData.desc3}}
+        </ion-row>
+    </ion-grid>
+
+    <div class="activityFooter ">
+        <ion-toolbar vertical="bottom " horizontal="start " color="transparent ">
+            <ion-button class="actSubmitButton compBtn" shape="round " fill="solid " color="compButton " expand="full ">Mark Completed</ion-button>
+            <ion-button class="actSubmitButton assesBtn" shape="round " fill="outline " color="assessButton " expand="full ">
+                Take Assesment
+                <ion-icon slot="end" name="ios-arrow-dropright"></ion-icon>
+            </ion-button>
+        </ion-toolbar>
+    </div>
+
+</ion-content>

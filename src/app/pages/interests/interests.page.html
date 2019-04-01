@@ -1,0 +1,33 @@
+<!-- <ion-header mode="ios"> -->
+<!-- <ion-toolbar color="primary"> -->
+<!-- <ion-searchbar placeholder="What skills are you looking for ?"></ion-searchbar> -->
+<!-- </ion-toolbar> -->
+<!-- </ion-header> -->
+
+<ion-content class="interestmain">
+
+    <div class="interestcontents">
+
+        <ion-searchbar class="customSearch" placeholder="What skills are you looking for ?"></ion-searchbar>
+
+        <ion-grid class="skillsGrid">
+            <!--  [ngStyle]="{height:contentHeight+'px'}" -->
+            <ion-row class=" ion-align-items-center ">
+                <ion-col *ngFor="let skill of skills " size="6 ">
+                    <ion-item class="skillList-item" [ngClass]="{ 'chip': skill.isSelected == 1, 'chips-default': skill.isSelected == 0} " color="transparent" lines="none">
+                        <ion-label>{{skill.tag}}</ion-label>
+                        <ion-checkbox mode="ios" slot="start" checked="skill.isSelected" [(ngModel)]="skill.isSelected" [color]="{ 'skipButton': skill.isSelected == 1, 'doneButton': skill.isSelected == 0}"></ion-checkbox>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <div class="interestFooter ">
+            <ion-toolbar vertical="bottom " horizontal="start " color="transparent ">
+                <ion-button class="skillsButton skipBtn " shape="round " fill="outline " color="skipButton " expand="full " (click)="goToDashboard()">SKIP</ion-button>
+                <ion-button class="skillsButton doneBtn " shape="round " fill="solid " color="doneButton " expand="full " (click)="addEditInterests()">DONE</ion-button>
+            </ion-toolbar>
+        </div>
+    </div>
+
+</ion-content>

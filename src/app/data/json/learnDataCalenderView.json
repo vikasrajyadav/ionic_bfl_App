@@ -1,0 +1,30 @@
+[
+	{
+		"compDate": "March 4",
+		"list": [
+			{
+				"cat_id": 26,
+				"category": "Demo Category 04March",
+				"compStatus": "ONGOING",
+				"completed": "00 / 00",
+				"completed_courses": 0,
+				"courseDate": "NaN  NaN",
+				"courseDate1": "March 4",
+				"courseDesc": "This is Demo Category 04",
+				"courseMonth": "March",
+				"courseTitle": "Demo Course 04 March",
+				"courseType": "MANDATORY",
+				"courseType2": "Online",
+				"endDate": "05 Mar 2019",
+				"id": 32,
+				"nextStage": "",
+				"percComplete": 2,
+				"startDate": "2019-03-04T03:27:08.000Z",
+				"total_courses": 0,
+				"type1Image": "assets/images/orangeLearn.svg",
+				"type2Image": "assets/images/online.svg",
+				"typeImage": null,
+			}
+		]
+	}
+]

@@ -1,0 +1,7 @@
+{
+  "name": "edgeApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

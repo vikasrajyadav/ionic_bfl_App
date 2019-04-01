@@ -1,0 +1,46 @@
+[
+	{
+        "id": 0,
+        "moduleId": 22,
+        "moduleName": "Module 1",
+        "list": [
+            {
+                "activityId": 7,
+                "activityName": "Activity 1",
+                "activityTypeId": 1,
+                "activity_type": "File",
+                "courseId": 45,
+                "courseOrder": 0,
+                "creditAllocId": 241,
+                "img": "assets/images/open-book-leaf.jpg",
+                "moduleId": 22,
+                "modulePic": "assets/images/course1.jpg",
+                "modulename": "Demo Module",
+                "points": 1,
+                "summary": "This is Demo Module ",
+                "supertypeId": 1,
+                "tenantId": 1,
+                "usermodified": 2,
+                "visible": 1,
+            },{
+                "activityId": 8,
+                "activityName": "Activity 2",
+                "activityTypeId": 1,
+                "activity_type": "File",
+                "courseId": 45,
+                "courseOrder": 0,
+                "creditAllocId": 241,
+                "img": "assets/images/open-book-leaf.jpg",
+                "moduleId": 22,
+                "modulePic": "assets/images/course1.jpg",
+                "modulename": "Demo Module",
+                "points": 1,
+                "summary": "This is Demo Module ",
+                "supertypeId": 1,
+                "tenantId": 1,
+                "usermodified": 2,
+                "visible": 1,
+            }
+        ]
+    }
+]
