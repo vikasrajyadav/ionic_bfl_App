@@ -31,7 +31,7 @@
 <ion-toolbar>
   <ion-segment [(ngModel)]="mainTabType" scrollable>
     <ion-segment-button [value]="tab.id" *ngFor="let tab of tabsWithType">
-      <ion-label class="tabLabel" (click)="StatusType(tab.name)">{{ tab.name }}</ion-label>
+      <ion-label class="tabLabel" (click)="TabStatusTypeChanger(tab.name)">{{ tab.name }}</ion-label>
     </ion-segment-button>
   </ion-segment>
 </ion-toolbar>
@@ -40,7 +40,7 @@
   <ion-grid>
     <ion-card
       class="coursecard"
-      *ngFor="let cards of coursesList"
+      *ngFor="let cards of EmployeeList"
     >
     <div *ngIf="cards.approval == ToggleStatusType">
       <ion-row class="headrrow" >

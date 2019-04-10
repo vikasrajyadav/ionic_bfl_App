@@ -12,21 +12,29 @@ export class ChatPage implements OnInit {
 
   ngOnInit() {}
 
+
   tabsWithType = [
     { id: 1, name: "Approved" },
     { id: 2, name: "Pending" },
   ];
 
+
+  //Tab Status type Storing Variable
+
   ToggleStatusType = "Approved";
 
-StatusType(status){
+  //Tab Status Changer function
+
+TabStatusTypeChanger(status){
 this.ToggleStatusType = status;
 console.log(this.ToggleStatusType);
 }
 
   mainTabType: any;
 
-  coursesList: any = [
+  // Employee list
+
+  EmployeeList: any = [
     {
       icon: "assets/icon/purpleIcon.png",
       title: "Sales and Marketing",
