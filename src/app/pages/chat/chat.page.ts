@@ -17,6 +17,13 @@ export class ChatPage implements OnInit {
     { id: 2, name: "Pending" },
   ];
 
+  ToggleStatusType = "Approved";
+
+StatusType(status){
+this.ToggleStatusType = status;
+console.log(this.ToggleStatusType);
+}
+
   mainTabType: any;
 
   coursesList: any = [
@@ -34,7 +41,7 @@ export class ChatPage implements OnInit {
       empName: "Stephen Haward",
       course: "Course-125",
       startDate: "11 Apr 19",
-      approval: "pending",
+      approval: "Pending",
       online: "6/7",
       class: "5/7",
       grade: "50",
@@ -54,7 +61,7 @@ export class ChatPage implements OnInit {
       empName: "Stephen Haward",
       course: "Course-125",
       startDate: "11 Apr 19",
-      approval: "pending",
+      approval: "Pending",
       online: "6/7",
       class: "5/7",
       grade: "50",
@@ -73,7 +80,7 @@ export class ChatPage implements OnInit {
       empName: "Arthur James",
       course: "Course-222",
       startDate: "23 Mar 19",
-      approval: false,
+      approval: "Pending",
       online: "6/7",
       class: "5/7",
       grade: "50",
@@ -92,7 +99,7 @@ export class ChatPage implements OnInit {
       empName: "Raymond Shaw",
       course: "Course-201",
       startDate: "28 May 19",
-      approval: true,
+      approval: "Approved",
       online: "6/7",
       class: "5/7",
       grade: "50",
@@ -112,7 +119,7 @@ export class ChatPage implements OnInit {
       empName: "Eric Vasquez",
       course: "Course-101",
       startDate: "31 Mar 19",
-      approval: "pending",
+      approval: "Pending",
       online: "6/7",
       class: "5/7",
       grade: "50",
@@ -132,7 +139,7 @@ export class ChatPage implements OnInit {
       empName: "Raymond Shaw",
       course: "Course-11",
       startDate: "15 Apr 19",
-      approval: "pending",
+      approval: "Pending",
       online: "6/7",
       class: "5/7",
       grade: "50",
@@ -152,7 +159,7 @@ export class ChatPage implements OnInit {
       empName: "Arthur James",
       course: "Course-2",
       startDate: "20 Mar 19",
-      approval: true,
+      approval: "Approved",
       online: "6/7",
       class: "5/7",
       grade: "50",
@@ -172,12 +179,16 @@ export class ChatPage implements OnInit {
       empName: "Raymond Shaw",
       course: "Course-22",
       startDate: "15 Mar 19",
-      approval: "pending",
+      approval: "Pending",
       online: "6/7",
       class: "5/7",
       grade: "50",
       points: "92"
     }
   ];
+
+
+
+
 
 }
