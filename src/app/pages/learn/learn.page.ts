@@ -44,7 +44,10 @@ export class LearnPage implements OnInit {
       course: "Course-125",
       startDate: "11 Apr 19",
       approval: "pending",
-      points: "7/7",
+      online: "6/7",
+      class: "5/7",
+      grade: "50",
+      points: "70"
     },
     {
       icon: "assets/icon/OrangeIcon.png",
@@ -61,7 +64,10 @@ export class LearnPage implements OnInit {
       course: "Course-125",
       startDate: "11 Apr 19",
       approval: "pending",
-      points: "7/7",
+      online: "6/7",
+      class: "5/7",
+      grade: "50",
+      points: "80"
     },
     {
       icon: "assets/icon/purpleIcon.png",
@@ -77,7 +83,10 @@ export class LearnPage implements OnInit {
       course: "Course-222",
       startDate: "23 Mar 19",
       approval: false,
-      points: "7/7",
+      online: "6/7",
+      class: "5/7",
+      grade: "50",
+      points: "90"
     },
     {
       icon: "assets/icon/OrangeIcon.png",
@@ -93,7 +102,10 @@ export class LearnPage implements OnInit {
       course: "Course-201",
       startDate: "28 May 19",
       approval: true,
-      points: "7/7",
+      online: "6/7",
+      class: "5/7",
+      grade: "50",
+      points: "85"
     },
     {
       icon: "assets/icon/purpleIcon.png",
@@ -110,7 +122,10 @@ export class LearnPage implements OnInit {
       course: "Course-101",
       startDate: "31 Mar 19",
       approval: "pending",
-      points: "7/7",
+      online: "6/7",
+      class: "5/7",
+      grade: "50",
+      points: "65"
     },
     {
       icon: "assets/icon/OrangeIcon.png",
@@ -127,7 +142,10 @@ export class LearnPage implements OnInit {
       course: "Course-11",
       startDate: "15 Apr 19",
       approval: "pending",
-      points: "7/7",
+      online: "6/7",
+      class: "5/7",
+      grade: "50",
+      points: "95"
     },
     {
       icon: "assets/icon/purpleIcon.png",
@@ -144,24 +162,30 @@ export class LearnPage implements OnInit {
       course: "Course-2",
       startDate: "20 Mar 19",
       approval: true,
-      points: "7/7",
+      online: "6/7",
+      class: "5/7",
+      grade: "50",
+      points: "97"
     },
     {
-      icon: "assets/icon/OrangeIcon.png",
-      title: "Sales and Marketing",
-      stage: "Market Analysis",
-      type: ["Aspirational", "All"],
-      typename: "Aspirational",
-      courseNo: 3,
-      targetDate: Date.now(),
-      progressValue: 43,
-      isOnline: true,
+        icon: "assets/icon/OrangeIcon.png",
+        title: "Sales and Marketing",
+        stage: "Market Analysis",
+        type: ["Aspirational", "All"],
+        typename: "Aspirational",
+        courseNo: 3,
+        targetDate: Date.now(),
+        progressValue: 43,
+        isOnline: true,
       empCode: 1,
       empName: "Raymond Shaw",
       course: "Course-22",
       startDate: "15 Mar 19",
       approval: "pending",
-      points: "7/7",
+      online: "6/7",
+      class: "5/7",
+      grade: "50",
+      points: "92"
     }
   ];
 

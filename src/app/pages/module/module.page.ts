@@ -37,7 +37,8 @@ export class ModulePage implements OnInit {
           // tslint:disable-next-line:max-line-length
           description:
             "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum.",
-          saved: false
+          saved: false,
+          
         }
       ]
     },
